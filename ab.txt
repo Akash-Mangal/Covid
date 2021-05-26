@@ -1,0 +1,31 @@
+if choice=='Show Data':
+    delete_var('choice')
+    save_var(0,'choice')
+    viewData()
+
+if id==1 :
+    delete_var('choice')
+    save_var(1,'choice')
+    st.title("Showing Dataset Statistic")
+
+
+if choice==2:
+    
+    st.title("Charts and graphs")
+
+if choice==3:
+    save_var(3,'choice')
+    uploadData()
+
+
+
+if choice==4:
+    delete_var('choice')
+    st.title("What is the project")
+    st.image('CORONA.jpg', use_column_width=True)
+    st.write(ABOUT)
+
+if choice==5:
+    delete_var('choice')
+    st.title("About the Project creators")
+
