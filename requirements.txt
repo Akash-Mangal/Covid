@@ -7,4 +7,6 @@ fastai==1.0.61
 PIL
 sqlalchemy
 wheel
-sk learn
+os
+fpdf
+base64
