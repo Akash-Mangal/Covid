@@ -6,3 +6,4 @@ matplotlib
 pillow
 sqlalchemy
 FPDF
+fastai====1.0.61
