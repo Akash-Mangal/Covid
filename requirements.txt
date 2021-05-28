@@ -5,5 +5,5 @@ plotly.express
 matplotlib
 pillow
 sqlalchemy
-fpdf
+fpdf 1.7.2
 base64
