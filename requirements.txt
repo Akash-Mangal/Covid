@@ -3,7 +3,6 @@ pandas
 numpy
 plotly.express
 matplotlib
-fastai==1.0.61
 PIL
 sqlalchemy
 wheel
