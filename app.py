@@ -28,19 +28,19 @@ d=cols[3].button(MENU_OPTION[3])
 e=cols[4].button(MENU_OPTION[4])
 f=cols[5].button(MENU_OPTION[5])
 
-if load_var('choice')==None:
-    save_var(0,'choice')
+if load_var('/tmp/choice')==None:
+    save_var(0,'/tmp/choice')
 if a or b or c or d or e or f:
-    delete_var('choice')
-if a or load_var('choice')==0:
-    save_var(0,'choice')
+    delete_var('/tmp/choice')
+if a or load_var('/tmp/choice')==0:
+    save_var(0,'/tmp/choice')
     #try:
     viewData()
     #except:
         #st.error("No data found")
 
 if b :
-    save_var(1,'choice')
+    save_var(1,'/tmp/choice')
     cols=st.beta_columns((2,5,2))
     cols[1].text('''\n \n
     .                precision  recall    f1-score   support\n
@@ -56,7 +56,7 @@ if b :
     
 
 
-if c or load_var('choice')==2:
+if c or load_var('/tmp/choice')==2:
     delete_var('choice')
     save_var(2,'choice')
     st.title("Charts and graphs")
