@@ -7,5 +7,5 @@ pillow
 sqlalchemy
 FPDF
 fastai==1.0.61
-sqlalchemy.ext.declarative
+sqlalchemy.ext.declarative==1.4
 datetime
