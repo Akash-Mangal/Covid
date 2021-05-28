@@ -8,3 +8,4 @@ sqlalchemy
 FPDF
 fastai==1.0.61
 datetime
+Image
