@@ -6,8 +6,7 @@ import plotly.express as px
 import db
 import os
 from report import *
-from fastai.basic_train import load_learner
-from fastai.vision.image import open_image
+
 
 
 
