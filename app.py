@@ -29,7 +29,7 @@ e=cols[4].button(MENU_OPTION[4])
 f=cols[5].button(MENU_OPTION[5])
 
 if load_var('/tmp/choice')==None:
-    save_var(0,'/tmp/choice')
+    save_var(3,'/tmp/choice')
 if a or b or c or d or e or f:
     delete_var('/tmp/choice')
 if a or load_var('/tmp/choice')==0:
@@ -64,20 +64,24 @@ if c or load_var('/tmp/choice')==2:
     g=cols[0].radio('Select Graph',['Accuracy Graph.png','Iteration Graph.png','Loss Graph.png'])
     cols[1].image(g,use_column_width=True)
 
-if d or load_var('choice')==3:
-    delete_var('choice')
-    save_var(3,'choice')
+if d or load_var('/tmp/choice')==3:
+    delete_var('/tmp/choice')
+    save_var(3,'/tmp/choice')
     uploadData()
     
 
 
 if e:
+    delete_var('/tmp/choice')
+    save_var(4,'/tmp/choice')
     st.title("What is the project")
     img_col=st.beta_columns((4,2))
     img_col[1].image('CORONA.jpg',use_column_width=True)
     img_col[0].write(ABOUT)
 
 if f:
+    delete_var('/tmp/choice')
+    save_var(4,'/tmp/choice')
     st.title("About the Project creators")
     st.write(DEVELOPERS)
 
