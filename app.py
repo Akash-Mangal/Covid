@@ -32,10 +32,10 @@ if a or b or c or d or e or f:
     delete_var('choice')
 if a or load_var('choice')==0:
     save_var(0,'choice')
-    try:
-     viewData()
-    except:
-        st.error("No data found")
+    #try:
+    viewData()
+    #except:
+        #st.error("No data found")
 
 if b :
     save_var(1,'choice')
