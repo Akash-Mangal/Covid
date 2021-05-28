@@ -122,12 +122,12 @@ def viewData():
     images = sess.query(db.Image).filter((db.Image.contact==contact) | (db.Image.name == name)).all()
     # close database
     sess.close()
-    save_var(images, 'images.dk')
+    save_var(images, '/tmp/images.dk')
     
     # show the image names in sidebar to select one
     if load_var('images.dk'):
         
-        content=load_var('images.dk')
+        content=load_var('/tmp/images.dk')
         list_data =[]
         list_path =[]
         for i in content:
