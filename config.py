@@ -65,9 +65,9 @@ def uploadData():
 
         learner = None
         info ={
-            'covid':'''covid-19 pneumonia causes the density of the lungs to increase. This may be seen as whiteness in the lungs on radiography which, depending on the severity of the pneumonia, obscures the lung markings that are normally seen; however, this may be delayed in appearing or absent.''',
-            'pneumonia':'''When interpreting the x-ray, the AI will look for white spots in the lungs (called infiltrates) that identify an infection. This exam will also help determine if you have any complications related to pneumonia such as abscesses or pleural effusions (fluid surrounding the lungs).''',
-            'normal':'the xray image does not show symptoms of pneumonia or covid-19'
+            'Covid':'''covid-19 pneumonia causes the density of the lungs to increase. This may be seen as whiteness in the lungs on radiography which, depending on the severity of the pneumonia, obscures the lung markings that are normally seen; however, this may be delayed in appearing or absent.''',
+            'Pneumonia':'''When interpreting the x-ray, the AI will look for white spots in the lungs (called infiltrates) that identify an infection. This exam will also help determine if you have any complications related to pneumonia such as abscesses or pleural effusions (fluid surrounding the lungs).''',
+            'Normal':'the xray image does not show symptoms of pneumonia or covid-19'
         }
 
         with st.spinner("please wait, while model loads"):
@@ -90,7 +90,7 @@ def uploadData():
         
         st.success(cat)
         if str(cat) == 'Covid-19':
-            st.success(info['covid'])
+            st.success(info['Covid'])
         elif str(cat) == 'Pneumonia':
             st.success(info['Pneumonia'])
         elif str(cat) == 'normal':
