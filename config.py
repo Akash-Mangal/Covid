@@ -113,6 +113,7 @@ def viewData():
     #Ask for Details
     cols=st.beta_columns(2)
     name = cols[0].text_input("Name")
+    name=name.upper()
     contact = cols[1].text_input("Contact Number")
   
         
