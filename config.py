@@ -168,6 +168,7 @@ def viewData():
         col[1].write(str(profile.contact))
         col[1].write(profile.result)
         col[2].image(im,use_column_width=True)
+        delet_var('images.dk')
         
         
     if not load_var('images.dk') and name and contact :
