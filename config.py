@@ -124,8 +124,10 @@ def viewData():
     sess.close()
     save_var(images, '/tmp/images.dk')
     
+    view=st.button("Show Report")
+    
     # show the image names in sidebar to select one
-    if load_var('images.dk') & (name!= "" | contact!= ""):
+    if load_var('images.dk'):
         
         content=load_var('/tmp/images.dk')
         list_data =[]
