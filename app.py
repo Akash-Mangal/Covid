@@ -28,8 +28,7 @@ d=cols[3].button(MENU_OPTION[3])
 e=cols[4].button(MENU_OPTION[4])
 f=cols[5].button(MENU_OPTION[5])
 
-if load_var('/tmp/choice')==None:
-    save_var(3,'/tmp/choice')
+
 if a or b or c or d or e or f:
     delete_var('/tmp/choice')
 if a or load_var('/tmp/choice')==0:
