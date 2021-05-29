@@ -125,7 +125,7 @@ def viewData():
     save_var(images, '/tmp/images.dk')
     
     # show the image names in sidebar to select one
-    if load_var('images.dk'):
+    if load_var('images.dk') & (name | contact):
         
         content=load_var('/tmp/images.dk')
         list_data =[]
