@@ -11,7 +11,6 @@ from report import *
 
 
 st.set_page_config(layout="wide")
-
 #st.title(PROJECT_NAME)
 with st.beta_container():
     st.write('<style>body { font-family: sans-serif;border-style: } .header{border-bottom-style: solid;padding-left:10px; padding-right: 938px;z-index: 1; background: White; color: #F63366; position:fixed;top:0px;} .sticky { position: fixed;top: 20; } </style><div class="header" id="myHeader"><h2 style="color: #F63366;"><b>'+"Covid-19 Detection"+'</b></h2></div>', unsafe_allow_html=True)
@@ -56,8 +55,8 @@ if b :
 
 
 if c or load_var('/tmp/choice')==2:
-    delete_var('choice')
-    save_var(2,'choice')
+    delete_var('/tmp/choice')
+    save_var(2,'/tmp/choice')
     st.title("Charts and graphs")
     cols=st.beta_columns((5,10,4))
     g=st.sidebar.radio('Select Graph',['Accuracy Graph.png','Iteration Graph.png','Loss Graph.png'])
