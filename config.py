@@ -171,8 +171,7 @@ def viewData():
         col[1].write(str(profile.contact))
         col[1].write(profile.result)
         col[2].image(im,use_column_width=True)
-        delet_var('/tmp/images.dk')
-        
+       
         
     if not load_var('/tmp/images.dk') and name and contact :
         st.info("Not Found: Upload your data")
