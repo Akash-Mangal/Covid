@@ -60,7 +60,7 @@ if c or load_var('/tmp/choice')==2:
     save_var(2,'choice')
     st.title("Charts and graphs")
     cols=st.beta_columns((5,10,4))
-    g=cols[0].radio('Select Graph',['Accuracy Graph.png','Iteration Graph.png','Loss Graph.png'])
+    g=st.sidebar.radio('Select Graph',['Accuracy Graph.png','Iteration Graph.png','Loss Graph.png'])
     cols[1].image(g,use_column_width=True)
 
 if d or load_var('/tmp/choice')==3:
