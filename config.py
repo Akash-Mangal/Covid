@@ -42,7 +42,7 @@ def delete_var(path):
         os.unlink(path)
 
 def open_db():
-    engine = create_engine("sqlite:///db.sqlite3")
+    engine = create_engine("sqlite:///db.sqlite3?mode=rw")
     Session = sessionmaker(bind=engine)
     return Session()
 
