@@ -55,6 +55,7 @@ images=None
 def uploadData():
     st.header("Prediction using AI model")
     name = st.text_input("Name")
+    name = name.upper()
     col = st.beta_columns((1,2,3))
     age = col[0].text_input("Age")
     gender = col[1].selectbox("Gender",GENDER)
@@ -169,11 +170,11 @@ def viewData():
         col[1].write(str(profile.contact))
         col[1].write(profile.result)
         col[2].image(im,use_column_width=True)
-        delet_var('images.dk')
+        delet_var('/tmp/images.dk')
         
         
-    if not load_var('images.dk') and name and contact :
-        st.info("Not Found")
+    if not load_var('/tmp/images.dk') and name and contact :
+        st.info("Not Found: Upload your data")
 
 ABOUT = '''According to the World Health Organization (WHO), the coronavirus (COVID-19) pandemic is putting
 even the best healthcare systems across the world under tremendous pressure. The early detection of
