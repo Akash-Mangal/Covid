@@ -4,7 +4,7 @@ numpy
 plotly.express
 matplotlib
 pillow
-sqlalchemy
+sqlalchemy == 1.4
 FPDF
 fastai==1.0.61
 datetime
