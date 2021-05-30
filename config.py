@@ -40,15 +40,10 @@ def load_var(path):
 def delete_var(path):
     if os.path.exists(path):
         os.unlink(path)
-
-class MyListener(PoolListener):
-    def connect(self, dbapi_con, con_record):
-        dbapi_con.execute('pragma journal_mode=OFF')
-        dbapi_con.execute('PRAGMA synchronous=OFF')
-        dbapi_con.execute('PRAGMA cache_size=100000')        
+ 
 
 def open_db():
-    engine = create_engine("sqlite:///db.sqlite3, echo=False, listeners= [MyListener()]")
+    engine = create_engine("sqlite:///db.sqlite3 ? mode='rw'")
     Session = sessionmaker(bind=engine)
     return Session()
 
