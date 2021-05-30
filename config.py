@@ -13,6 +13,8 @@ from fastai.vision.image import open_image
 import numpy as np
 import pandas as pd
 from datetime import datetime
+from sqlalchemy.interfaces import PoolListener
+
 
 PROJECT_NAME = 'COVID-19 Detection'
 CREATOR = "Anupam and Akash Agarwal"
@@ -41,8 +43,14 @@ def delete_var(path):
     if os.path.exists(path):
         os.unlink(path)
 
+class MyListener(PoolListener):
+    def connect(self, dbapi_con, con_record):
+        dbapi_con.execute('pragma journal_mode=OFF')
+        dbapi_con.execute('PRAGMA synchronous=OFF')
+        dbapi_con.execute('PRAGMA cache_size=100000')        
+
 def open_db():
-    engine = create_engine("sqlite:///db.sqlite3?mode=rw")
+    engine = create_engine("sqlite:///db.sqlite3, echo=False, listeners= [MyListener()]")
     Session = sessionmaker(bind=engine)
     return Session()
 
