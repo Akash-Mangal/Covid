@@ -13,8 +13,6 @@ from fastai.vision.image import open_image
 import numpy as np
 import pandas as pd
 from datetime import datetime
-from sqlalchemy.interfaces import PoolListener
-
 
 PROJECT_NAME = 'COVID-19 Detection'
 CREATOR = "Anupam and Akash Agarwal"
