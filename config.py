@@ -81,8 +81,6 @@ def uploadData():
         ext= imgdata.type.split('/')[1]
         # save file to upload folder
         im.save(path,format=ext)
-        # saves info to db
-        sess = open_db()
         
         # show a msg
         img = open_image(path)
@@ -99,7 +97,8 @@ def uploadData():
 
         result=str(cat).upper()
         imdb = db.Image( name= name, path=path, age=age, gender=gender, contact=contact, result= result)
-
+        # saves info to db
+        sess = open_db()
         sess.add(imdb)
         sess.commit()
         sess.close()
