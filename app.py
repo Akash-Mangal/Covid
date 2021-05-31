@@ -10,7 +10,8 @@ from sqlalchemy import create_engine
 from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 
-
+# setup db code
+Base = declarative_base()
 
 
 st.set_page_config(layout="wide")
