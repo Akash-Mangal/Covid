@@ -19,6 +19,7 @@ try:
     if not path.exists("/tmp/db.sqlite3"):
         engine = create_engine("sqlite:///db.sqlite3")
         Base.metadata.create_all(engine)
+        st.write("done")
 except:
     st.write("Error Occured")
 
