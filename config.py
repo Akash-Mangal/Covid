@@ -16,7 +16,7 @@ from datetime import datetime
 
 PROJECT_NAME = 'COVID-19 Detection'
 CREATOR = "Anupam and Akash Agarwal"
-UPLOAD_FOLDER = '/tmp/uploads'
+UPLOAD_FOLDER = 'uploads'
 GENDER = ['Male','Female','Other']
 MENU_OPTION = [
     'Show Data',
