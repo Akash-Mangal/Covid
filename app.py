@@ -49,15 +49,16 @@ if b :
     save_var(1,'/tmp/choice')
     cols=st.beta_columns((2,5,2))
     cols[1].text('''\n \n
-    .                precision  recall    f1-score   support\n
+  
+        .                precision  recall    f1-score   support\n
 
-        Covid-19       1.00      0.68      0.81        25\n
-     No_findings       0.82      0.79      0.81       100\n
-       Pneumonia       0.79      0.89      0.84       100\n
+        Covid-19       1.00      0.80      0.89        25\n
+          normal       0.85      0.81      0.83       100\n
+       Pneumonia       0.82      0.90      0.86       100\n
 
-        accuracy                           0.82       225\n
-       macro avg       0.87      0.79      0.82       225\n
-    weighted avg       0.83      0.82      0.82       225'''
+        accuracy                           0.85       225\n
+       macro avg       0.89      0.84      0.86       225\n
+    weighted avg       0.85      0.85      0.85       225'''
 )
     
 
