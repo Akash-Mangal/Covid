@@ -23,7 +23,6 @@ if not os.path.exists("db.sqlite3"):
     engine = create_engine("sqlite:///db.sqlite3")
     Base.metadata.create_all(engine)
     st.write("done")
-Image(Base)
 
 with st.beta_container():
     cols=st.beta_columns(6)
