@@ -28,7 +28,7 @@ class Image(Base):
     contact = Column(Integer)
     uploaded_on = Column(String,default=datetime.now().strftime(" %d %b, %Y at %I:%M %p"))
     result=Column(String)
-
+    st.write("create table")
     def __str__(self):
         return self.path
     
