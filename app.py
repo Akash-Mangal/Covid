@@ -12,6 +12,8 @@ from sqlalchemy.ext.declarative import declarative_base
 import sqlalchemy
 from datetime import datetime
 
+st.set_page_config(layout="wide")
+
 # setup db code
 Base = declarative_base()
 
@@ -38,7 +40,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     st.write("done")
     
-st.set_page_config(layout="wide")
+
 #st.title(PROJECT_NAME)
 with st.beta_container():
     st.write('<style>body { font-family: sans-serif;border-style: } .header{border-bottom-style: solid;padding-left:10px; padding-right: 938px;z-index: 1; background: White; color: #F63366; position:fixed;top:0px;} .sticky { position: fixed;top: 20; } </style><div class="header" id="myHeader"><h2 style="color: #F63366;"><b>'+"Covid-19 Detection"+'</b></h2></div>', unsafe_allow_html=True)
