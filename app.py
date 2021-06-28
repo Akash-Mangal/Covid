@@ -28,7 +28,7 @@ class Image(Base):
     contact = Column(Integer)
     uploaded_on = Column(String,default=datetime.now().strftime(" %d %b, %Y at %I:%M %p"))
     result=Column(String)
-    st.write("create table")
+    
     def __str__(self):
         return self.path
     
@@ -38,7 +38,7 @@ class Image(Base):
 if __name__ == "__main__":
     engine = create_engine("sqlite:///db.sqlite3")
     Base.metadata.create_all(engine)
-    st.write("done")
+   
     
 
 #st.title(PROJECT_NAME)
@@ -118,7 +118,7 @@ if f:
     st.markdown("<p style='text-align: justify; color: #F63366;'>The web application Leukemia detection through CNN has been developed by Akash agarwal and Anupam, the final semester students of Bachelors of Computer Applications in Babu Banarasi Das University, Lucknow. The project is based on python with data science. The basic technologies used for the project are- python 3.9.5, VS code, SQLite3 and Google collab.</p>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: justify; color: #F63366;'>As a collaborative project, both of us divided our tasks equally. The project consists of 10 modules.</p>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: justify; color: #F63366;'>Contribution of the student in the project:</p>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: justify; color: #F63366;'>Anubhavi Patel: <ul><li>Leukaemia Image Collection</li><li> Image Convolution</li><ul> Maxpooling, Activation Function Selection, Leukaemia Model Training.</p>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: justify; color: #F63366;'>Anukriti Srivastava: Leukaemia Model Visualization, Prediction System, Database Manager, Setting Manager, View Display Manager.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: justify; color: #F63366;'>Akash Agarwal: <ul><li>X-ray Image Dataset Collection</li><li>Background Subtraction and edge detection</li><li>Model training and visualization</li><li>Database manager</li><li>Prediction System</li></ul></p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: justify; color: #F63366;'>Anupam:<ul><li>Image preprocessing </li><li>Model Creation System</li><li>Model Persistence System</li><li>View Display Manager</li><li>Timeline Visualization</li></ul></p>", unsafe_allow_html=True)
     st.write(DEVELOPERS)
 
