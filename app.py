@@ -115,7 +115,7 @@ if f:
     delete_var('/tmp/choice')
     save_var(4,'/tmp/choice')
     st.title("About the Project creators")
-    st.markdown("<p style='text-align: justify; color: #F63366;'>The web application Leukemia detection through CNN has been developed by Akash agarwal and Anupam, the final semester students of Bachelors of Computer Applications in Babu Banarasi Das University, Lucknow. The project is based on python with data science. The basic technologies used for the project are- python 3.9.5, VS code, SQLite3 and Google collab.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: justify; color: #F63366;'>The web application Covid-19 Detection Using Chest X-Ray through CNN has been developed by Akash Agarwal and Anupam, the final semester students of Bachelors of Computer Applications in Babu Banarasi Das University, Lucknow. The project is based on python with data science. The basic technologies used for the project are- python 3.8.8, VS code, SQLite3 and Google collab.</p>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: justify; color: #F63366;'>As a collaborative project, both of us divided our tasks equally. The project consists of 10 modules.</p>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: justify; color: #F63366;'>Contribution of the student in the project:</p>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: justify; color: #F63366;'>Akash Agarwal: <ul><li>X-ray Image Dataset Collection</li><li>Background Subtraction and edge detection</li><li>Model training and visualization</li><li>Database manager</li><li>Prediction System</li></ul></p>", unsafe_allow_html=True)
