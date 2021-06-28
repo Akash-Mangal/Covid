@@ -121,4 +121,5 @@ if f:
     st.markdown("<p style='text-align: justify; color: #F63366;'>Akash Agarwal: <ul><li>X-ray Image Dataset Collection</li><li>Background Subtraction and edge detection</li><li>Model training and visualization</li><li>Database manager</li><li>Prediction System</li></ul></p>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: justify; color: #F63366;'>Anupam:<ul><li>Image preprocessing </li><li>Model Creation System</li><li>Model Persistence System</li><li>View Display Manager</li><li>Timeline Visualization</li></ul></p>", unsafe_allow_html=True)
     st.write(DEVELOPERS)
+    st.markdown("<p style='text-align: center; color: red;'>सुदिनमस्तु</p>", unsafe_allow_html=True)
 
