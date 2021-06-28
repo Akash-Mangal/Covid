@@ -118,7 +118,8 @@ if f:
     st.markdown("<p style='text-align: justify; color: #F63366;'>The web application Leukemia detection through CNN has been developed by Akash agarwal and Anupam, the final semester students of Bachelors of Computer Applications in Babu Banarasi Das University, Lucknow.</p>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: justify; color: #F63366;'>The project is based on python with data science. The basic technologies used for the project are- python 3.9.5, VS code, SQLite3 and Google collab.</p>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: justify; color: #F63366;'>As a collaborative project, both of us divided our tasks equally. The project consists of 10 modules.</p>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: justify; color: #F63366;'>Contribution of the student in the project: Anubhavi Patel: Leukaemia Image Collection, Image Convolution, Maxpooling, Activation Function Selection, Leukaemia Model Training.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: justify; color: #F63366;'>Contribution of the student in the project:</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: justify; color: #F63366;'>Anubhavi Patel: <ul><li>Leukaemia Image Collection</li><li> Image Convolution</li><ul> Maxpooling, Activation Function Selection, Leukaemia Model Training.</p>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: justify; color: #F63366;'>Anukriti Srivastava: Leukaemia Model Visualization, Prediction System, Database Manager, Setting Manager, View Display Manager.</p>", unsafe_allow_html=True)
     st.write(DEVELOPERS)
 
