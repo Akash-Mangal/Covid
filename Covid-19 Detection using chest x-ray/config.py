@@ -50,7 +50,7 @@ images=None
 def uploadData():
     st.header("Prediction using AI model")
     name = st.text_input("Name")
-    col = st.beta_columns((1,2,3))
+    col = st.columns((1,2,3))
     age = col[0].text_input("Age")
     gender = col[1].selectbox("Gender",GENDER)
     contact = col[2].text_input("Contact Number")
@@ -104,7 +104,7 @@ def uploadData():
 def viewData():
     st.title("View Report")
     #Ask for Details
-    cols=st.beta_columns(2)
+    cols=st.columns(2)
     name = cols[0].text_input("Name")
     contact = cols[1].text_input("Contact Number")
   
