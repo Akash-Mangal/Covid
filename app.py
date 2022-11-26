@@ -50,8 +50,8 @@ with st.container():
 #  Base.metadata.create_all(engine)
   
 
-with st.beta_container():
-    cols=st.beta_columns(6)
+with st.container():
+    cols=st.columns(6)
     
 a=cols[0].button(MENU_OPTION[0])
 b=cols[1].button(MENU_OPTION[1])
@@ -72,7 +72,7 @@ if a or load_var('/tmp/choice')==0:
 
 if b :
     save_var(1,'/tmp/choice')
-    cols=st.beta_columns((2,5,2))
+    cols=st.columns((2,5,2))
     cols[1].text('''\n \n
   
         .                precision  recall    f1-score   support\n
@@ -92,7 +92,7 @@ if c or load_var('/tmp/choice')==2:
     delete_var('/tmp/choice')
     save_var(2,'/tmp/choice')
     st.title("Charts and graphs")
-    cols=st.beta_columns((5,10,4))
+    cols=st.columns((5,10,4))
     g=cols[0].radio('Select Graph',['Accuracy Graph.png','Iteration Graph.png','Loss Graph.png'])
     cols[1].image(g,use_column_width=True)
 
@@ -107,7 +107,7 @@ if e:
     delete_var('/tmp/choice')
     save_var(4,'/tmp/choice')
     st.title("What is the project")
-    img_col=st.beta_columns((4,2))
+    img_col=st.columns((4,2))
     img_col[1].image('CORONA.jpg',use_column_width=True)
     img_col[0].write(ABOUT)
 
