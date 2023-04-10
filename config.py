@@ -121,7 +121,7 @@ def viewData():
     sess = open_db()
     # get all the images from the image table
 
-    images = sess.query(db.Image).filter((db.Image.contact==contact) or (db.Image.name == name)).all()
+    images = sess.query(db.Image).filter((db.Image.contact==contact)).all()
     # close database
     sess.close()
     save_var(images, '/tmp/images.dk')
